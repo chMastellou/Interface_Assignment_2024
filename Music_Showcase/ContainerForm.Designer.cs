@@ -30,7 +30,6 @@
         {
             panel1 = new Panel();
             userTypeLabel = new Label();
-            label1 = new Label();
             usernameLabel = new Label();
             profilePictureBox = new PictureBox();
             button1 = new Button();
@@ -47,7 +46,6 @@
             panel1.BackgroundImage = Properties.Resources.gradient11;
             panel1.BackgroundImageLayout = ImageLayout.Stretch;
             panel1.Controls.Add(userTypeLabel);
-            panel1.Controls.Add(label1);
             panel1.Controls.Add(usernameLabel);
             panel1.Controls.Add(profilePictureBox);
             panel1.Location = new Point(0, 0);
@@ -61,24 +59,12 @@
             userTypeLabel.BackColor = Color.Transparent;
             userTypeLabel.Font = new Font("Cambria", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             userTypeLabel.ForeColor = Color.FromArgb(255, 224, 192);
-            userTypeLabel.Location = new Point(844, 9);
+            userTypeLabel.Location = new Point(888, 9);
             userTypeLabel.Name = "userTypeLabel";
             userTypeLabel.Size = new Size(164, 32);
             userTypeLabel.TabIndex = 4;
             userTypeLabel.Text = "ΥΠΑΛΛΗΛΟΣ";
             userTypeLabel.Click += userTypeLabel_Click;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Cambria", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.FromArgb(255, 224, 192);
-            label1.Location = new Point(1023, 9);
-            label1.Name = "label1";
-            label1.Size = new Size(29, 32);
-            label1.TabIndex = 3;
-            label1.Text = "X";
             // 
             // usernameLabel
             // 
@@ -181,7 +167,7 @@
             Controls.Add(button2);
             Controls.Add(panel1);
             Controls.Add(button1);
-            FormBorderStyle = FormBorderStyle.None;
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "Container";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
@@ -202,6 +188,5 @@
         private Button button5;
         private Label usernameLabel;
         private Label userTypeLabel;
-        private Label label1;
     }
 }

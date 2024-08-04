@@ -28,5 +28,20 @@ namespace Music_Showcase
         {
 
         }
+
+        private void Container_Load_2(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

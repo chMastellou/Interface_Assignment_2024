@@ -28,64 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            panel1 = new Panel();
-            userTypeLabel = new Label();
-            usernameLabel = new Label();
-            profilePictureBox = new PictureBox();
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
             button4 = new Button();
             button5 = new Button();
-            panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)profilePictureBox).BeginInit();
+            pictureBox1 = new PictureBox();
+            panel1 = new Panel();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
-            // 
-            // panel1
-            // 
-            panel1.BackgroundImage = Properties.Resources.gradient11;
-            panel1.BackgroundImageLayout = ImageLayout.Stretch;
-            panel1.Controls.Add(userTypeLabel);
-            panel1.Controls.Add(usernameLabel);
-            panel1.Controls.Add(profilePictureBox);
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1065, 49);
-            panel1.TabIndex = 0;
-            // 
-            // userTypeLabel
-            // 
-            userTypeLabel.AutoSize = true;
-            userTypeLabel.BackColor = Color.Transparent;
-            userTypeLabel.Font = new Font("Cambria", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            userTypeLabel.ForeColor = Color.FromArgb(255, 224, 192);
-            userTypeLabel.Location = new Point(888, 9);
-            userTypeLabel.Name = "userTypeLabel";
-            userTypeLabel.Size = new Size(164, 32);
-            userTypeLabel.TabIndex = 4;
-            userTypeLabel.Text = "ΥΠΑΛΛΗΛΟΣ";
-            userTypeLabel.Click += userTypeLabel_Click;
-            // 
-            // usernameLabel
-            // 
-            usernameLabel.AutoSize = true;
-            usernameLabel.BackColor = Color.Transparent;
-            usernameLabel.Font = new Font("Cambria", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            usernameLabel.ForeColor = Color.FromArgb(255, 224, 192);
-            usernameLabel.Location = new Point(63, 9);
-            usernameLabel.Name = "usernameLabel";
-            usernameLabel.Size = new Size(84, 32);
-            usernameLabel.TabIndex = 2;
-            usernameLabel.Text = "label1";
-            usernameLabel.Click += usernameLabel_Click;
-            // 
-            // profilePictureBox
-            // 
-            profilePictureBox.Location = new Point(0, 0);
-            profilePictureBox.Name = "profilePictureBox";
-            profilePictureBox.Size = new Size(57, 49);
-            profilePictureBox.TabIndex = 1;
-            profilePictureBox.TabStop = false;
             // 
             // button1
             // 
@@ -94,12 +45,13 @@
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Cambria", 15.75F);
             button1.ForeColor = Color.FromArgb(255, 224, 192);
-            button1.Location = new Point(0, 46);
+            button1.Location = new Point(0, -1);
             button1.Name = "button1";
-            button1.Size = new Size(171, 130);
+            button1.Size = new Size(171, 144);
             button1.TabIndex = 1;
             button1.Text = "button1";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -108,9 +60,9 @@
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Cambria", 15.75F);
             button2.ForeColor = Color.FromArgb(255, 224, 192);
-            button2.Location = new Point(0, 173);
+            button2.Location = new Point(0, 126);
             button2.Name = "button2";
-            button2.Size = new Size(171, 130);
+            button2.Size = new Size(171, 144);
             button2.TabIndex = 2;
             button2.Text = "button2";
             button2.UseVisualStyleBackColor = false;
@@ -122,9 +74,9 @@
             button3.FlatStyle = FlatStyle.Flat;
             button3.Font = new Font("Cambria", 15.75F);
             button3.ForeColor = Color.FromArgb(255, 224, 192);
-            button3.Location = new Point(0, 300);
+            button3.Location = new Point(0, 261);
             button3.Name = "button3";
-            button3.Size = new Size(171, 130);
+            button3.Size = new Size(171, 144);
             button3.TabIndex = 3;
             button3.Text = "button3";
             button3.UseVisualStyleBackColor = false;
@@ -136,12 +88,13 @@
             button4.FlatStyle = FlatStyle.Flat;
             button4.Font = new Font("Cambria", 15.75F);
             button4.ForeColor = Color.FromArgb(255, 224, 192);
-            button4.Location = new Point(0, 425);
+            button4.Location = new Point(0, 401);
             button4.Name = "button4";
-            button4.Size = new Size(171, 130);
+            button4.Size = new Size(171, 144);
             button4.TabIndex = 4;
             button4.Text = "button4";
             button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // button5
             // 
@@ -150,44 +103,57 @@
             button5.FlatStyle = FlatStyle.Flat;
             button5.Font = new Font("Cambria", 15.75F);
             button5.ForeColor = Color.Sienna;
-            button5.Location = new Point(0, 551);
+            button5.Location = new Point(0, 536);
             button5.Name = "button5";
-            button5.Size = new Size(171, 130);
+            button5.Size = new Size(171, 144);
             button5.TabIndex = 5;
             button5.Text = "button5";
             button5.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Location = new Point(999, 12);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(53, 50);
+            pictureBox1.TabIndex = 6;
+            pictureBox1.TabStop = false;
+            // 
+            // panel1
+            // 
+            panel1.Location = new Point(167, 68);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(903, 612);
+            panel1.TabIndex = 7;
             // 
             // Container
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Black;
             ClientSize = new Size(1064, 681);
+            Controls.Add(pictureBox1);
             Controls.Add(button5);
             Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(button2);
-            Controls.Add(panel1);
             Controls.Add(button1);
+            Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "Container";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Music Showcase";
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)profilePictureBox).EndInit();
+            Load += Container_Load_2;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
-
-        private Panel panel1;
-        private PictureBox profilePictureBox;
         private Button button1;
         private Button button2;
         private Button button3;
         private Button button4;
         private Button button5;
-        private Label usernameLabel;
-        private Label userTypeLabel;
+        private PictureBox pictureBox1;
+        private Panel panel1;
     }
 }

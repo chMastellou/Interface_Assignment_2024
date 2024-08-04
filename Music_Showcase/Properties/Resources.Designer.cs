@@ -63,6 +63,26 @@ namespace Music_Showcase.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Download_free_Dark_Purple_Color_background_images {
+            get {
+                object obj = ResourceManager.GetObject("Download-free-Dark-Purple-Color-background-images", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FvDtL_eXwB8wEMb {
+            get {
+                object obj = ResourceManager.GetObject("FvDtL-eXwB8wEMb", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap gradient1 {
             get {
                 object obj = ResourceManager.GetObject("gradient1", resourceCulture);

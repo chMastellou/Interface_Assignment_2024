@@ -5,7 +5,6 @@ namespace Music_Showcase
         public Container()
         {
             InitializeComponent();
-            usernameLabel.Text = GLOBALS.username;
 
         }
 

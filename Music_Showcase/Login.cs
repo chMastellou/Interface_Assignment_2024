@@ -16,5 +16,31 @@ namespace Music_Showcase
         {
             InitializeComponent();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void loginButton_Click(object sender, EventArgs e)
+        {
+            if (!String.IsNullOrEmpty(usernameTextbox.Text))
+            {
+                GLOBALS.username = usernameTextbox.Text;
+                GLOBALS.role = userTypeBox.Text;
+                Container container = new Container();
+                container.Show();
+                this.Visible = false;
+            }
+            else
+            {
+                MessageBox.Show("Δεν έχετε επιλέξει ψευδώνυμο!", "Σφάλμα", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

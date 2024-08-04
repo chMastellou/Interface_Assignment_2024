@@ -5,6 +5,8 @@ namespace Music_Showcase
         public Container()
         {
             InitializeComponent();
+            usernameLabel.Text = GLOBALS.username;
+
         }
 
         private void Container_Load(object sender, EventArgs e)
@@ -18,6 +20,11 @@ namespace Music_Showcase
         }
 
         private void userTypeLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void usernameLabel_Click(object sender, EventArgs e)
         {
 
         }

@@ -77,6 +77,7 @@
             usernameLabel.Size = new Size(84, 32);
             usernameLabel.TabIndex = 2;
             usernameLabel.Text = "label1";
+            usernameLabel.Click += usernameLabel_Click;
             // 
             // profilePictureBox
             // 
@@ -170,7 +171,7 @@
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "Container";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form1";
+            Text = "Music Showcase";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)profilePictureBox).EndInit();

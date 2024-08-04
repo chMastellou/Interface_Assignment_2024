@@ -28,166 +28,401 @@
         /// </summary>
         private void InitializeComponent()
         {
-            panel1 = new Panel();
-            userTypeLabel = new Label();
-            usernameLabel = new Label();
-            profilePictureBox = new PictureBox();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
-            button5 = new Button();
-            panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)profilePictureBox).BeginInit();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Container));
+            pictureBox1 = new PictureBox();
+            tableLayoutPanel1 = new TableLayoutPanel();
+            tableLayoutPanel2 = new TableLayoutPanel();
+            panel7 = new Panel();
+            label5 = new Label();
+            pictureBox6 = new PictureBox();
+            panel3 = new Panel();
+            label1 = new Label();
+            pictureBox2 = new PictureBox();
+            panel6 = new Panel();
+            label4 = new Label();
+            pictureBox5 = new PictureBox();
+            panel4 = new Panel();
+            label2 = new Label();
+            pictureBox3 = new PictureBox();
+            panel5 = new Panel();
+            label3 = new Label();
+            pictureBox4 = new PictureBox();
+            panel9 = new Panel();
+            pictureBox8 = new PictureBox();
+            panel2 = new Panel();
+            panel8 = new Panel();
+            label6 = new Label();
+            pictureBox7 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            tableLayoutPanel1.SuspendLayout();
+            tableLayoutPanel2.SuspendLayout();
+            panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             SuspendLayout();
             // 
-            // panel1
+            // pictureBox1
             // 
-            panel1.BackgroundImage = Properties.Resources.gradient11;
-            panel1.BackgroundImageLayout = ImageLayout.Stretch;
-            panel1.Controls.Add(userTypeLabel);
-            panel1.Controls.Add(usernameLabel);
-            panel1.Controls.Add(profilePictureBox);
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1065, 49);
-            panel1.TabIndex = 0;
+            pictureBox1.BackColor = Color.Transparent;
+            pictureBox1.Location = new Point(1132, 13);
+            pictureBox1.Margin = new Padding(3, 4, 3, 4);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(72, 70);
+            pictureBox1.TabIndex = 6;
+            pictureBox1.TabStop = false;
             // 
-            // userTypeLabel
+            // tableLayoutPanel1
             // 
-            userTypeLabel.AutoSize = true;
-            userTypeLabel.BackColor = Color.Transparent;
-            userTypeLabel.Font = new Font("Cambria", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            userTypeLabel.ForeColor = Color.FromArgb(255, 224, 192);
-            userTypeLabel.Location = new Point(888, 9);
-            userTypeLabel.Name = "userTypeLabel";
-            userTypeLabel.Size = new Size(164, 32);
-            userTypeLabel.TabIndex = 4;
-            userTypeLabel.Text = "ΥΠΑΛΛΗΛΟΣ";
-            userTypeLabel.Click += userTypeLabel_Click;
+            tableLayoutPanel1.ColumnCount = 2;
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 11.0197372F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 88.98026F));
+            tableLayoutPanel1.Controls.Add(tableLayoutPanel2, 0, 1);
+            tableLayoutPanel1.Controls.Add(panel9, 0, 0);
+            tableLayoutPanel1.Controls.Add(panel2, 1, 1);
+            tableLayoutPanel1.Controls.Add(panel8, 1, 0);
+            tableLayoutPanel1.Dock = DockStyle.Fill;
+            tableLayoutPanel1.Location = new Point(0, 0);
+            tableLayoutPanel1.Name = "tableLayoutPanel1";
+            tableLayoutPanel1.RowCount = 2;
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 9.030837F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 90.96916F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel1.Size = new Size(1216, 908);
+            tableLayoutPanel1.TabIndex = 9;
             // 
-            // usernameLabel
+            // tableLayoutPanel2
             // 
-            usernameLabel.AutoSize = true;
-            usernameLabel.BackColor = Color.Transparent;
-            usernameLabel.Font = new Font("Cambria", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            usernameLabel.ForeColor = Color.FromArgb(255, 224, 192);
-            usernameLabel.Location = new Point(63, 9);
-            usernameLabel.Name = "usernameLabel";
-            usernameLabel.Size = new Size(84, 32);
-            usernameLabel.TabIndex = 2;
-            usernameLabel.Text = "label1";
-            usernameLabel.Click += usernameLabel_Click;
+            tableLayoutPanel2.ColumnCount = 1;
+            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            tableLayoutPanel2.Controls.Add(panel7, 0, 5);
+            tableLayoutPanel2.Controls.Add(panel3, 0, 1);
+            tableLayoutPanel2.Controls.Add(panel6, 0, 4);
+            tableLayoutPanel2.Controls.Add(panel4, 0, 2);
+            tableLayoutPanel2.Controls.Add(panel5, 0, 3);
+            tableLayoutPanel2.Dock = DockStyle.Fill;
+            tableLayoutPanel2.Location = new Point(3, 85);
+            tableLayoutPanel2.Name = "tableLayoutPanel2";
+            tableLayoutPanel2.RowCount = 7;
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 30F));
+            tableLayoutPanel2.RowStyles.Add(new RowStyle());
+            tableLayoutPanel2.RowStyles.Add(new RowStyle());
+            tableLayoutPanel2.RowStyles.Add(new RowStyle());
+            tableLayoutPanel2.RowStyles.Add(new RowStyle());
+            tableLayoutPanel2.RowStyles.Add(new RowStyle());
+            tableLayoutPanel2.RowStyles.Add(new RowStyle());
+            tableLayoutPanel2.Size = new Size(128, 820);
+            tableLayoutPanel2.TabIndex = 19;
             // 
-            // profilePictureBox
+            // panel7
             // 
-            profilePictureBox.Location = new Point(0, 0);
-            profilePictureBox.Name = "profilePictureBox";
-            profilePictureBox.Size = new Size(57, 49);
-            profilePictureBox.TabIndex = 1;
-            profilePictureBox.TabStop = false;
+            panel7.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            panel7.Controls.Add(label5);
+            panel7.Controls.Add(pictureBox6);
+            panel7.Cursor = Cursors.Hand;
+            panel7.Location = new Point(3, 481);
+            panel7.Name = "panel7";
+            panel7.Size = new Size(98, 103);
+            panel7.TabIndex = 18;
             // 
-            // button1
+            // label5
             // 
-            button1.BackColor = Color.FromArgb(180, 79, 33);
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Cambria", 15.75F);
-            button1.ForeColor = Color.FromArgb(255, 224, 192);
-            button1.Location = new Point(0, 46);
-            button1.Name = "button1";
-            button1.Size = new Size(171, 130);
-            button1.TabIndex = 1;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = false;
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 10.2F);
+            label5.ForeColor = SystemColors.ActiveCaption;
+            label5.Location = new Point(3, 68);
+            label5.Name = "label5";
+            label5.Size = new Size(87, 23);
+            label5.TabIndex = 0;
+            label5.Text = "Εισητήρια";
+            label5.Visible = false;
             // 
-            // button2
+            // pictureBox6
             // 
-            button2.BackColor = Color.FromArgb(197, 100, 51);
-            button2.FlatAppearance.BorderSize = 0;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Cambria", 15.75F);
-            button2.ForeColor = Color.FromArgb(255, 224, 192);
-            button2.Location = new Point(0, 173);
-            button2.Name = "button2";
-            button2.Size = new Size(171, 130);
-            button2.TabIndex = 2;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = false;
+            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
+            pictureBox6.Location = new Point(18, 3);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(65, 62);
+            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox6.TabIndex = 0;
+            pictureBox6.TabStop = false;
             // 
-            // button3
+            // panel3
             // 
-            button3.BackColor = Color.FromArgb(213, 122, 69);
-            button3.FlatAppearance.BorderSize = 0;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Font = new Font("Cambria", 15.75F);
-            button3.ForeColor = Color.FromArgb(255, 224, 192);
-            button3.Location = new Point(0, 300);
-            button3.Name = "button3";
-            button3.Size = new Size(171, 130);
-            button3.TabIndex = 3;
-            button3.Text = "button3";
-            button3.UseVisualStyleBackColor = false;
+            panel3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            panel3.Controls.Add(label1);
+            panel3.Controls.Add(pictureBox2);
+            panel3.Cursor = Cursors.Hand;
+            panel3.Location = new Point(3, 33);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(98, 97);
+            panel3.TabIndex = 14;
             // 
-            // button4
+            // label1
             // 
-            button4.BackColor = Color.FromArgb(230, 143, 86);
-            button4.FlatAppearance.BorderSize = 0;
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Font = new Font("Cambria", 15.75F);
-            button4.ForeColor = Color.FromArgb(255, 224, 192);
-            button4.Location = new Point(0, 425);
-            button4.Name = "button4";
-            button4.Size = new Size(171, 130);
-            button4.TabIndex = 4;
-            button4.Text = "button4";
-            button4.UseVisualStyleBackColor = false;
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 10.2F);
+            label1.ForeColor = SystemColors.ActiveCaption;
+            label1.Location = new Point(18, 68);
+            label1.Name = "label1";
+            label1.Size = new Size(62, 23);
+            label1.TabIndex = 0;
+            label1.Text = "Αρχείο";
+            label1.Visible = false;
             // 
-            // button5
+            // pictureBox2
             // 
-            button5.BackColor = Color.FromArgb(246, 164, 104);
-            button5.FlatAppearance.BorderSize = 0;
-            button5.FlatStyle = FlatStyle.Flat;
-            button5.Font = new Font("Cambria", 15.75F);
-            button5.ForeColor = Color.Sienna;
-            button5.Location = new Point(0, 551);
-            button5.Name = "button5";
-            button5.Size = new Size(171, 130);
-            button5.TabIndex = 5;
-            button5.Text = "button5";
-            button5.UseVisualStyleBackColor = false;
+            pictureBox2.Image = Properties.Resources.video_9327754;
+            pictureBox2.Location = new Point(18, 3);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(65, 62);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 0;
+            pictureBox2.TabStop = false;
+            pictureBox2.MouseLeave += pictureBox2_MouseLeave;
+            pictureBox2.MouseHover += pictureBox2_MouseHover;
+            // 
+            // panel6
+            // 
+            panel6.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            panel6.Controls.Add(label4);
+            panel6.Controls.Add(pictureBox5);
+            panel6.Cursor = Cursors.Hand;
+            panel6.Location = new Point(3, 360);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(98, 115);
+            panel6.TabIndex = 17;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 10.2F);
+            label4.ForeColor = SystemColors.ActiveCaption;
+            label4.Location = new Point(12, 68);
+            label4.Name = "label4";
+            label4.Size = new Size(78, 23);
+            label4.TabIndex = 0;
+            label4.Text = "Συσκευές";
+            label4.Visible = false;
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.Image = Properties.Resources.electronic_device_5772459;
+            pictureBox5.Location = new Point(18, 3);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(65, 62);
+            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox5.TabIndex = 0;
+            pictureBox5.TabStop = false;
+            pictureBox5.MouseLeave += pictureBox5_MouseLeave;
+            pictureBox5.MouseHover += pictureBox5_MouseHover;
+            // 
+            // panel4
+            // 
+            panel4.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            panel4.Controls.Add(label2);
+            panel4.Controls.Add(pictureBox3);
+            panel4.Cursor = Cursors.Hand;
+            panel4.Location = new Point(3, 136);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(98, 107);
+            panel4.TabIndex = 15;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 10.2F);
+            label2.ForeColor = SystemColors.ActiveCaption;
+            label2.Location = new Point(13, 68);
+            label2.Name = "label2";
+            label2.Size = new Size(70, 23);
+            label2.TabIndex = 0;
+            label2.Text = "Φαγητό";
+            label2.Visible = false;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = Properties.Resources.fasting_7255651;
+            pictureBox3.Location = new Point(18, 3);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(65, 62);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 0;
+            pictureBox3.TabStop = false;
+            pictureBox3.MouseLeave += pictureBox3_MouseLeave;
+            pictureBox3.MouseHover += pictureBox3_MouseHover;
+            // 
+            // panel5
+            // 
+            panel5.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            panel5.Controls.Add(label3);
+            panel5.Controls.Add(pictureBox4);
+            panel5.Cursor = Cursors.Hand;
+            panel5.Location = new Point(3, 249);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(98, 105);
+            panel5.TabIndex = 16;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 10.2F);
+            label3.ForeColor = SystemColors.ActiveCaption;
+            label3.Location = new Point(13, 68);
+            label3.Name = "label3";
+            label3.Size = new Size(77, 23);
+            label3.TabIndex = 0;
+            label3.Text = "Γίνετε DJ";
+            label3.Visible = false;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.Image = Properties.Resources.speaker_5204532;
+            pictureBox4.Location = new Point(18, 3);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(65, 62);
+            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox4.TabIndex = 0;
+            pictureBox4.TabStop = false;
+            pictureBox4.MouseLeave += pictureBox4_MouseLeave;
+            pictureBox4.MouseHover += pictureBox4_MouseHover;
+            // 
+            // panel9
+            // 
+            panel9.Controls.Add(pictureBox8);
+            panel9.Location = new Point(3, 3);
+            panel9.Name = "panel9";
+            panel9.Size = new Size(128, 76);
+            panel9.TabIndex = 3;
+            // 
+            // pictureBox8
+            // 
+            pictureBox8.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            pictureBox8.Image = Properties.Resources.museum;
+            pictureBox8.Location = new Point(21, 10);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(52, 50);
+            pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox8.TabIndex = 2;
+            pictureBox8.TabStop = false;
+            // 
+            // panel2
+            // 
+            panel2.BackgroundImage = Properties.Resources.Download_free_Dark_Purple_Color_background_images2;
+            panel2.BackgroundImageLayout = ImageLayout.Stretch;
+            panel2.Dock = DockStyle.Fill;
+            panel2.Location = new Point(137, 85);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(1076, 820);
+            panel2.TabIndex = 1;
+            // 
+            // panel8
+            // 
+            panel8.Controls.Add(label6);
+            panel8.Controls.Add(pictureBox7);
+            panel8.Dock = DockStyle.Right;
+            panel8.Location = new Point(1006, 3);
+            panel8.Name = "panel8";
+            panel8.Size = new Size(207, 76);
+            panel8.TabIndex = 2;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 10.2F);
+            label6.ForeColor = SystemColors.ActiveCaption;
+            label6.Location = new Point(44, 21);
+            label6.Name = "label6";
+            label6.Size = new Size(76, 23);
+            label6.TabIndex = 2;
+            label6.Text = "Χρήστης";
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.Image = Properties.Resources.user_8017294;
+            pictureBox7.Location = new Point(146, 9);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(52, 50);
+            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox7.TabIndex = 1;
+            pictureBox7.TabStop = false;
             // 
             // Container
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1064, 681);
-            Controls.Add(button5);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(panel1);
-            Controls.Add(button1);
+            BackColor = Color.Black;
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(1216, 908);
+            Controls.Add(tableLayoutPanel1);
+            Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Container";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Music Showcase";
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)profilePictureBox).EndInit();
+            Load += Container_Load_2;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            tableLayoutPanel1.ResumeLayout(false);
+            tableLayoutPanel2.ResumeLayout(false);
+            panel7.ResumeLayout(false);
+            panel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            panel6.ResumeLayout(false);
+            panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            panel4.ResumeLayout(false);
+            panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            panel5.ResumeLayout(false);
+            panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            panel9.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
+            panel8.ResumeLayout(false);
+            panel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
-
-        private Panel panel1;
-        private PictureBox profilePictureBox;
-        private Button button1;
-        private Button button2;
-        private Button button3;
-        private Button button4;
-        private Button button5;
-        private Label usernameLabel;
-        private Label userTypeLabel;
+        private PictureBox pictureBox1;
+        private TableLayoutPanel tableLayoutPanel1;
+        private Panel panel7;
+        private Label label5;
+        private PictureBox pictureBox6;
+        private Panel panel6;
+        private Label label4;
+        private PictureBox pictureBox5;
+        private Panel panel5;
+        private Label label3;
+        private PictureBox pictureBox4;
+        private Panel panel4;
+        private Label label2;
+        private PictureBox pictureBox3;
+        private Panel panel3;
+        private Label label1;
+        private PictureBox pictureBox2;
+        private Panel panel2;
+        private Panel panel8;
+        private Label label6;
+        private PictureBox pictureBox7;
+        private Panel panel9;
+        private PictureBox pictureBox8;
+        private TableLayoutPanel tableLayoutPanel2;
     }
 }

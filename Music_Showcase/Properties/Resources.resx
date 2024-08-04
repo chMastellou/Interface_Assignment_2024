@@ -121,13 +121,64 @@
   <data name="gradient1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\gradient1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="video_9327764" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\video_9327764.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Download-free-Dark-Purple-Color-background-images1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Download-free-Dark-Purple-Color-background-images.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user_8017294" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user_8017294.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="gradient2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\gradient2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dinosaur" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dinosaur.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fasting_7301163" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fasting_7301163.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="gradient11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\gradient11.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="speaker_5204318" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\speaker_5204318.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Download-free-Dark-Purple-Color-background-images" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Download-free-Dark-Purple-Color-background-images.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="restaurant_138818321" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\restaurant_13881832.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="electronic-device_5772459" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\electronic-device_5772459.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="speaker_5204532" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\speaker_5204532.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Untitled" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Untitled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="electronic-device_5772414" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\electronic-device_5772414.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="museum" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\museum.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fasting_7255651" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fasting_7255651.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="restaurant_13881832" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\restaurant_13881832.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="video_9327754" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\video_9327754.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user_8051049" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user_8051049.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Download-free-Dark-Purple-Color-background-images2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Download-free-Dark-Purple-Color-background-images.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

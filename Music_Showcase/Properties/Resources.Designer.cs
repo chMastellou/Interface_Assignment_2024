@@ -63,9 +63,49 @@ namespace Music_Showcase.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap check_1053156 {
+            get {
+                object obj = ResourceManager.GetObject("check_1053156", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap check_13251931 {
+            get {
+                object obj = ResourceManager.GetObject("check_13251931", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap check_mark_7589242 {
+            get {
+                object obj = ResourceManager.GetObject("check-mark_7589242", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Download_free_Dark_Purple_Color_background_images {
             get {
                 object obj = ResourceManager.GetObject("Download-free-Dark-Purple-Color-background-images", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Download_free_Dark_Purple_Color_background_images1 {
+            get {
+                object obj = ResourceManager.GetObject("Download-free-Dark-Purple-Color-background-images1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

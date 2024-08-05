@@ -39,8 +39,22 @@
             label5 = new Label();
             seatNo = new NumericUpDown();
             seatBox = new Label();
+            label6 = new Label();
+            discountSelection = new ComboBox();
+            tableLayoutPanel1 = new TableLayoutPanel();
+            panel1 = new Panel();
+            dateCheck = new PictureBox();
+            discCheck = new PictureBox();
+            numberCheck = new PictureBox();
+            zoneCheck = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)seatNo).BeginInit();
+            tableLayoutPanel1.SuspendLayout();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dateCheck).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)discCheck).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numberCheck).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)zoneCheck).BeginInit();
             SuspendLayout();
             // 
             // zoneSelection
@@ -48,7 +62,7 @@
             zoneSelection.Font = new Font("Microsoft Sans Serif", 12F);
             zoneSelection.FormattingEnabled = true;
             zoneSelection.Items.AddRange(new object[] { "Α", "Β", "Γ", "Δ", "Ε" });
-            zoneSelection.Location = new Point(41, 211);
+            zoneSelection.Location = new Point(32, 209);
             zoneSelection.Name = "zoneSelection";
             zoneSelection.Size = new Size(163, 28);
             zoneSelection.TabIndex = 0;
@@ -61,7 +75,7 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = SystemColors.ButtonHighlight;
-            label1.Location = new Point(38, 33);
+            label1.Location = new Point(29, 25);
             label1.Name = "label1";
             label1.Size = new Size(335, 45);
             label1.TabIndex = 1;
@@ -73,7 +87,7 @@
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Microsoft Sans Serif", 12F);
             label2.ForeColor = SystemColors.ButtonHighlight;
-            label2.Location = new Point(38, 188);
+            label2.Location = new Point(29, 186);
             label2.Name = "label2";
             label2.Size = new Size(54, 20);
             label2.TabIndex = 2;
@@ -85,7 +99,7 @@
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Microsoft Sans Serif", 12F);
             label3.ForeColor = SystemColors.ButtonHighlight;
-            label3.Location = new Point(38, 106);
+            label3.Location = new Point(29, 104);
             label3.Name = "label3";
             label3.Size = new Size(119, 20);
             label3.TabIndex = 3;
@@ -97,20 +111,22 @@
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.SlateBlue;
-            button1.Location = new Point(128, 501);
+            button1.ForeColor = Color.FromArgb(72, 46, 109);
+            button1.Location = new Point(155, 684);
             button1.Name = "button1";
-            button1.Size = new Size(167, 53);
+            button1.Size = new Size(185, 53);
             button1.TabIndex = 5;
             button1.Text = " ΠΛΗΡΩΜΗ";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += payment_Click;
             // 
             // pictureBox1
             // 
+            pictureBox1.Dock = DockStyle.Fill;
             pictureBox1.Image = Properties.Resources.FvDtL_eXwB8wEMb;
-            pictureBox1.Location = new Point(460, 0);
+            pictureBox1.Location = new Point(499, 3);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(507, 664);
+            pictureBox1.Size = new Size(594, 814);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 6;
             pictureBox1.TabStop = false;
@@ -122,10 +138,11 @@
             dateTimePicker1.CalendarTitleBackColor = Color.Transparent;
             dateTimePicker1.CalendarTitleForeColor = Color.White;
             dateTimePicker1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dateTimePicker1.Location = new Point(41, 129);
+            dateTimePicker1.Location = new Point(32, 127);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(276, 29);
             dateTimePicker1.TabIndex = 7;
+            dateTimePicker1.ValueChanged += dateTimePicker1_ValueChanged;
             // 
             // label4
             // 
@@ -133,7 +150,7 @@
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Microsoft Sans Serif", 12F);
             label4.ForeColor = Color.White;
-            label4.Location = new Point(38, 351);
+            label4.Location = new Point(29, 357);
             label4.Name = "label4";
             label4.Size = new Size(170, 20);
             label4.TabIndex = 8;
@@ -145,7 +162,7 @@
             label5.BackColor = Color.Transparent;
             label5.Font = new Font("Microsoft Sans Serif", 12F);
             label5.ForeColor = Color.White;
-            label5.Location = new Point(38, 274);
+            label5.Location = new Point(29, 272);
             label5.Name = "label5";
             label5.Size = new Size(144, 20);
             label5.TabIndex = 10;
@@ -154,7 +171,7 @@
             // seatNo
             // 
             seatNo.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            seatNo.Location = new Point(41, 297);
+            seatNo.Location = new Point(32, 295);
             seatNo.Maximum = new decimal(new int[] { 30, 0, 0, 0 });
             seatNo.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             seatNo.Name = "seatNo";
@@ -168,37 +185,149 @@
             seatBox.AutoSize = true;
             seatBox.BackColor = Color.Transparent;
             seatBox.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            seatBox.Location = new Point(205, 347);
+            seatBox.Location = new Point(199, 353);
             seatBox.Name = "seatBox";
             seatBox.Size = new Size(34, 25);
             seatBox.TabIndex = 12;
             seatBox.Text = "Α1";
+            seatBox.TextChanged += seatBox_TextChanged;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.BackColor = Color.Transparent;
+            label6.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label6.Location = new Point(32, 410);
+            label6.Name = "label6";
+            label6.Size = new Size(90, 20);
+            label6.TabIndex = 13;
+            label6.Text = "ΕΚΠΤΩΣΗ:";
+            // 
+            // discountSelection
+            // 
+            discountSelection.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            discountSelection.FormattingEnabled = true;
+            discountSelection.Items.AddRange(new object[] { "0% - ΚΑΝΟΝΙΚΟ", "25% - ΦΟΙΤΗΤΙΚΟ / ΑΝΩ ΤΩΝ 65 ΕΤΩΝ", "50% - ΑΜΕΑ" });
+            discountSelection.Location = new Point(128, 406);
+            discountSelection.Name = "discountSelection";
+            discountSelection.Size = new Size(236, 29);
+            discountSelection.TabIndex = 14;
+            discountSelection.Text = "0% - ΚΑΝΟΝΙΚΟ";
+            discountSelection.SelectedIndexChanged += discountSelection_SelectedIndexChanged;
+            // 
+            // tableLayoutPanel1
+            // 
+            tableLayoutPanel1.BackColor = Color.Transparent;
+            tableLayoutPanel1.ColumnCount = 2;
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 45.2554741F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 54.7445259F));
+            tableLayoutPanel1.Controls.Add(pictureBox1, 1, 0);
+            tableLayoutPanel1.Controls.Add(panel1, 0, 0);
+            tableLayoutPanel1.Dock = DockStyle.Fill;
+            tableLayoutPanel1.Location = new Point(0, 0);
+            tableLayoutPanel1.Name = "tableLayoutPanel1";
+            tableLayoutPanel1.RowCount = 1;
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel1.Size = new Size(1096, 820);
+            tableLayoutPanel1.TabIndex = 15;
+            // 
+            // panel1
+            // 
+            panel1.Controls.Add(zoneCheck);
+            panel1.Controls.Add(numberCheck);
+            panel1.Controls.Add(discCheck);
+            panel1.Controls.Add(dateCheck);
+            panel1.Controls.Add(discountSelection);
+            panel1.Controls.Add(label1);
+            panel1.Controls.Add(label6);
+            panel1.Controls.Add(zoneSelection);
+            panel1.Controls.Add(seatBox);
+            panel1.Controls.Add(label2);
+            panel1.Controls.Add(seatNo);
+            panel1.Controls.Add(label3);
+            panel1.Controls.Add(label5);
+            panel1.Controls.Add(button1);
+            panel1.Controls.Add(label4);
+            panel1.Controls.Add(dateTimePicker1);
+            panel1.Dock = DockStyle.Fill;
+            panel1.Location = new Point(3, 3);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(490, 814);
+            panel1.TabIndex = 7;
+            // 
+            // dateCheck
+            // 
+            dateCheck.Image = Properties.Resources.check_1053156;
+            dateCheck.Location = new Point(323, 127);
+            dateCheck.Name = "dateCheck";
+            dateCheck.Size = new Size(30, 30);
+            dateCheck.SizeMode = PictureBoxSizeMode.StretchImage;
+            dateCheck.TabIndex = 15;
+            dateCheck.TabStop = false;
+            dateCheck.Visible = false;
+            // 
+            // discCheck
+            // 
+            discCheck.Image = Properties.Resources.check_1053156;
+            discCheck.Location = new Point(381, 406);
+            discCheck.Name = "discCheck";
+            discCheck.Size = new Size(30, 30);
+            discCheck.SizeMode = PictureBoxSizeMode.StretchImage;
+            discCheck.TabIndex = 16;
+            discCheck.TabStop = false;
+            discCheck.Visible = false;
+            // 
+            // numberCheck
+            // 
+            numberCheck.Image = Properties.Resources.check_1053156;
+            numberCheck.Location = new Point(213, 295);
+            numberCheck.Name = "numberCheck";
+            numberCheck.Size = new Size(30, 30);
+            numberCheck.SizeMode = PictureBoxSizeMode.StretchImage;
+            numberCheck.TabIndex = 17;
+            numberCheck.TabStop = false;
+            numberCheck.Visible = false;
+            // 
+            // zoneCheck
+            // 
+            zoneCheck.Image = Properties.Resources.check_1053156;
+            zoneCheck.Location = new Point(213, 209);
+            zoneCheck.Name = "zoneCheck";
+            zoneCheck.Size = new Size(30, 30);
+            zoneCheck.SizeMode = PictureBoxSizeMode.StretchImage;
+            zoneCheck.TabIndex = 18;
+            zoneCheck.TabStop = false;
+            zoneCheck.Visible = false;
             // 
             // Book_Tickets
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.Download_free_Dark_Purple_Color_background_images;
+            BackgroundImage = Properties.Resources.Download_free_Dark_Purple_Color_background_images1;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(964, 660);
-            Controls.Add(seatBox);
-            Controls.Add(seatNo);
-            Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(dateTimePicker1);
-            Controls.Add(pictureBox1);
-            Controls.Add(button1);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Controls.Add(zoneSelection);
+            ClientSize = new Size(1096, 820);
+            Controls.Add(tableLayoutPanel1);
             ForeColor = Color.White;
+            FormBorderStyle = FormBorderStyle.None;
             Name = "Book_Tickets";
             Text = "Tickets";
+            Load += Book_Tickets_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)seatNo).EndInit();
+            tableLayoutPanel1.ResumeLayout(false);
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dateCheck).EndInit();
+            ((System.ComponentModel.ISupportInitialize)discCheck).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numberCheck).EndInit();
+            ((System.ComponentModel.ISupportInitialize)zoneCheck).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -214,5 +343,13 @@
         private Label label5;
         private NumericUpDown seatNo;
         private Label seatBox;
+        private Label label6;
+        private ComboBox discountSelection;
+        private TableLayoutPanel tableLayoutPanel1;
+        private Panel panel1;
+        private PictureBox zoneCheck;
+        private PictureBox numberCheck;
+        private PictureBox discCheck;
+        private PictureBox dateCheck;
     }
 }

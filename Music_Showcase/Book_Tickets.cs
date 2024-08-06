@@ -21,7 +21,6 @@ namespace Music_Showcase
             InitializeComponent();
             date = dateTimePicker1.Text;
             seat = seatBox.Text;
-            double discount = 0.0;
         }
 
         private void zoneSelection_SelectedIndexChanged(object sender, EventArgs e)
